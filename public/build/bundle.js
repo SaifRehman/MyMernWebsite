@@ -83,7 +83,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        'hello React!',
 	        _react2.default.createElement(_zonecomponent2.default, null)
 	      );
 	    }
@@ -21550,7 +21549,35 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_zone2.default, null)
+	        _react2.default.createElement(
+	          'ol',
+	          null,
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(_zone2.default, { name: 'zone 1' })
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(_zone2.default, { name: 'zone 2' })
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(_zone2.default, { name: 'zone 3' })
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(_zone2.default, { name: 'zone 4' })
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(_zone2.default, { name: 'zone 5' })
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -21558,13 +21585,13 @@
 	  return ZoneComponent;
 	}(_react.Component);
 	
-	exports.default = ZoneComponent; //always capital letter in naming components
+	exports.default = ZoneComponent;
 
 /***/ },
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -21594,51 +21621,12 @@
 	  }
 	
 	  _createClass(Zones, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
+	        'div',
 	        null,
-	        _react2.default.createElement(
-	          "ol",
-	          null,
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "Zone1"
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "Zone2"
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "Zone3"
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "Zone4"
-	            )
-	          )
-	        )
+	        this.props.name
 	      );
 	    }
 	  }]);

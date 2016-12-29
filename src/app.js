@@ -5,7 +5,6 @@ class App extends Component{
   render(){
     return(
       <div>
-        hello React!
         <ZoneComponent></ZoneComponent>
       </div>
     )
