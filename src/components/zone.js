@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-class zone extends Component{
+class Zones extends Component{
   render(){
     return(
       <div>
@@ -8,4 +8,4 @@ class zone extends Component{
     )
   }
 }
-export default zone
+export default Zones //always capital letter in naming components

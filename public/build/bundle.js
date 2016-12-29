@@ -84,7 +84,7 @@
 	        'div',
 	        null,
 	        'hello React!',
-	        _react2.default.createElement('zone', null)
+	        _react2.default.createElement(_zone2.default, null)
 	      );
 	    }
 	  }]);
@@ -21531,16 +21531,16 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var zone = function (_Component) {
-	  _inherits(zone, _Component);
+	var Zones = function (_Component) {
+	  _inherits(Zones, _Component);
 	
-	  function zone() {
-	    _classCallCheck(this, zone);
+	  function Zones() {
+	    _classCallCheck(this, Zones);
 	
-	    return _possibleConstructorReturn(this, (zone.__proto__ || Object.getPrototypeOf(zone)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Zones.__proto__ || Object.getPrototypeOf(Zones)).apply(this, arguments));
 	  }
 	
-	  _createClass(zone, [{
+	  _createClass(Zones, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -21551,10 +21551,10 @@
 	    }
 	  }]);
 	
-	  return zone;
+	  return Zones;
 	}(_react.Component);
 	
-	exports.default = zone;
+	exports.default = Zones; //always capital letter in naming components
 
 /***/ }
 /******/ ]);
