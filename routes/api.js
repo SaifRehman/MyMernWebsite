@@ -22,9 +22,6 @@ router.get('/get',function(req,res,next)
     console.log("error");
   }
   else {
-      console.log("sucessfull query");
-      console.log('Data received from Db:\n');
-      console.log(rows);
       res.json({
         resource: rows
       })
