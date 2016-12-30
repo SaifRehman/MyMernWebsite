@@ -3,9 +3,9 @@ class Zones extends Component{
   render(){
     return(
       <div>
-      {this.props.curr.name}
-      <span> zipcode is {this.props.curr.zipcode} </span>
-      {this.props.curr.comments}
+      <span style={{color:'blue'}}>{this.props.curr.name}</span>
+      <span style = {{color:'red'}}> zipcode is</span> <span style = {{color:"green"}}>{this.props.curr.zipcode} </span>
+      <span style={{color:"purple"}}>{this.props.curr.comments}</span>
       </div>
     )
   }
