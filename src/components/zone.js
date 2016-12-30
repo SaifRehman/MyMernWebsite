@@ -4,6 +4,7 @@ class Zones extends Component{
     return(
       <div>
       {this.props.name}
+      <span> zipcode is {this.props.zipcode} </span>
       </div>
     )
   }

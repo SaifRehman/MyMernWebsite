@@ -21555,27 +21555,52 @@
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 1' })
+	            _react2.default.createElement(_zone2.default, { name: 'zone 1', zipcode: '9' })
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 2' })
+	            _react2.default.createElement(_zone2.default, { name: 'zone 2', zipcode: '8' })
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 3' })
+	            _react2.default.createElement(_zone2.default, { name: 'zone 3', zipcode: '7' })
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 4' })
+	            _react2.default.createElement(_zone2.default, { name: 'zone 4', zipcode: '6' })
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 5' })
+	            _react2.default.createElement(_zone2.default, { name: 'zone 5', zipcode: '5' })
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(_zone2.default, { name: 'zone 6', zipcode: '4' })
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(_zone2.default, { name: 'zone 7', zipcode: '3' })
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(_zone2.default, { name: 'zone 8', zipcode: '2' })
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(_zone2.default, { name: 'zone 9', zipcode: '1' })
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(_zone2.default, { name: 'zone 10', zipcode: '99' })
 	          )
 	        )
 	      );
@@ -21626,7 +21651,14 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        this.props.name
+	        this.props.name,
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          ' zipcode is ',
+	          this.props.zipcode,
+	          ' '
+	        )
 	      );
 	    }
 	  }]);
