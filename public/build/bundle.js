@@ -21540,42 +21540,31 @@
 	  function ZoneComponent() {
 	    _classCallCheck(this, ZoneComponent);
 	
-	    return _possibleConstructorReturn(this, (ZoneComponent.__proto__ || Object.getPrototypeOf(ZoneComponent)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (ZoneComponent.__proto__ || Object.getPrototypeOf(ZoneComponent)).call(this));
+	
+	    _this.state = {
+	      list: [{ name: 'zone1', zipcode: '10012', comments: 10 }, { name: 'zone2', zipcode: '10013', comments: 20 }, { name: 'zone3', zipcode: '10014', comments: 30 }, { name: 'zone4', zipcode: '10015', comments: 40 }, { name: 'zone6', zipcode: '10016', comments: 50 }]
+	    };
+	    return _this;
 	  }
 	
 	  _createClass(ZoneComponent, [{
 	    key: 'render',
 	    value: function render() {
-	      var firstZone = { name: 'zone1', zipcode: '10012', comments: 10 };
-	      var secondZone = { name: 'zone2', zipcode: '10013', comments: 20 };
-	      var thirdZone = { name: 'zone3', zipcode: '10014', comments: 30 };
-	      var fourthZone = { name: 'zone4', zipcode: '10015', comments: 40 };
+	      var listItems = this.state.list.map(function (zone, i) {
+	        return _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(_zone2.default, { curr: zone })
+	        );
+	      }); // function call back
 	      return _react2.default.createElement(
 	        'div',
 	        null,
 	        _react2.default.createElement(
 	          'ol',
 	          null,
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(_zone2.default, { curr: firstZone })
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(_zone2.default, { curr: secondZone })
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(_zone2.default, { curr: thirdZone })
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(_zone2.default, { curr: fourthZone })
-	          )
+	          listItems
 	        )
 	      );
 	    }
