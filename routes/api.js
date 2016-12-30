@@ -7,7 +7,7 @@ router.get('/get',function(req,res,next)
     host     : 'localhost',
     user     : 'root',
     password : 'root',
-    port: 8889
+    port: 3306
   });
   connection.connect(function(err) {
     if (err) {
