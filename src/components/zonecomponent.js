@@ -2,19 +2,17 @@ import React, { Component } from 'react'
 import Zones from './zone'
 class ZoneComponent extends Component{
   render(){
+    const firstZone = {name:'zone1',zipcode:'10012',comments:10};
+    const secondZone = {name:'zone2',zipcode:'10013',comments:20};
+    const thirdZone = {name:'zone3',zipcode:'10014',comments:30};
+    const fourthZone = {name:'zone4',zipcode:'10015',comments:40};
     return(
       <div>
       <ol>
-      <li><Zones name="zone 1" zipcode="9"/></li>
-      <li><Zones name="zone 2" zipcode="8"/></li>
-      <li><Zones name="zone 3" zipcode="7"/></li>
-      <li><Zones name="zone 4" zipcode="6"/></li>
-      <li><Zones name="zone 5" zipcode="5"/></li>
-      <li><Zones name="zone 6" zipcode="4"/></li>
-      <li><Zones name="zone 7" zipcode="3"/></li>
-      <li><Zones name="zone 8" zipcode="2"/></li>
-      <li><Zones name="zone 9" zipcode="1"/></li>
-      <li><Zones name="zone 10" zipcode="99"/></li>
+      <li><Zones curr={firstZone}/></li>
+      <li><Zones curr={secondZone}/></li>
+      <li><Zones curr={thirdZone}/></li>
+      <li><Zones curr={fourthZone}/></li>
       </ol>
       </div>
     )

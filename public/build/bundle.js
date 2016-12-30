@@ -21546,6 +21546,10 @@
 	  _createClass(ZoneComponent, [{
 	    key: 'render',
 	    value: function render() {
+	      var firstZone = { name: 'zone1', zipcode: '10012', comments: 10 };
+	      var secondZone = { name: 'zone2', zipcode: '10013', comments: 20 };
+	      var thirdZone = { name: 'zone3', zipcode: '10014', comments: 30 };
+	      var fourthZone = { name: 'zone4', zipcode: '10015', comments: 40 };
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -21555,52 +21559,22 @@
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 1', zipcode: '9' })
+	            _react2.default.createElement(_zone2.default, { curr: firstZone })
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 2', zipcode: '8' })
+	            _react2.default.createElement(_zone2.default, { curr: secondZone })
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 3', zipcode: '7' })
+	            _react2.default.createElement(_zone2.default, { curr: thirdZone })
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 4', zipcode: '6' })
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 5', zipcode: '5' })
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 6', zipcode: '4' })
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 7', zipcode: '3' })
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 8', zipcode: '2' })
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 9', zipcode: '1' })
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(_zone2.default, { name: 'zone 10', zipcode: '99' })
+	            _react2.default.createElement(_zone2.default, { curr: fourthZone })
 	          )
 	        )
 	      );
@@ -21651,14 +21625,15 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        this.props.name,
+	        this.props.curr.name,
 	        _react2.default.createElement(
 	          'span',
 	          null,
 	          ' zipcode is ',
-	          this.props.zipcode,
+	          this.props.curr.zipcode,
 	          ' '
-	        )
+	        ),
+	        this.props.curr.comments
 	      );
 	    }
 	  }]);

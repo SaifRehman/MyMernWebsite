@@ -3,8 +3,9 @@ class Zones extends Component{
   render(){
     return(
       <div>
-      {this.props.name}
-      <span> zipcode is {this.props.zipcode} </span>
+      {this.props.curr.name}
+      <span> zipcode is {this.props.curr.zipcode} </span>
+      {this.props.curr.comments}
       </div>
     )
   }
