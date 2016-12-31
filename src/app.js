@@ -9,21 +9,22 @@ import LandingPageBanner from './components/landingpagebanner'
 import Footer from './components/footer'
 import Signin from './components/signin'
 import Signup from './components/signup'
+import LandingPage from './components/landingpage'
 
+import {Router,Route,IndexRoute,hashHistory} from "react-router"
 
 
 class App extends Component{
   render(){
     return(
       <div>
-          <Navbar/>
-          <TopBanner/>
-          <LandingPageFirstData/>
-          <LandingPageSecondData/>
-          <LandingPageBanner/>
-          <Footer/>
     </div>
     )
   }
 }
-ReactDOM.render(<App />,document.getElementById('root'))
+ReactDOM.render(
+  < Router  history = {hashHistory}>
+  < Route path = "/" component={LandingPage}>
+  </Route>
+  </Router>
+  ,document.getElementById('root'))
