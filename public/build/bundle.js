@@ -64,9 +64,9 @@
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
-	var _signinAndSignup = __webpack_require__(181);
+	var _signin = __webpack_require__(181);
 	
-	var _signinAndSignup2 = _interopRequireDefault(_signinAndSignup);
+	var _signin2 = _interopRequireDefault(_signin);
 	
 	var _topbanner = __webpack_require__(182);
 	
@@ -21785,6 +21785,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _navbar = __webpack_require__(180);
+	
+	var _navbar2 = _interopRequireDefault(_navbar);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21793,16 +21797,16 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var SigninAndSignup = function (_Component) {
-	    _inherits(SigninAndSignup, _Component);
+	var Signin = function (_Component) {
+	    _inherits(Signin, _Component);
 	
-	    function SigninAndSignup() {
-	        _classCallCheck(this, SigninAndSignup);
+	    function Signin() {
+	        _classCallCheck(this, Signin);
 	
-	        return _possibleConstructorReturn(this, (SigninAndSignup.__proto__ || Object.getPrototypeOf(SigninAndSignup)).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (Signin.__proto__ || Object.getPrototypeOf(Signin)).apply(this, arguments));
 	    }
 	
-	    _createClass(SigninAndSignup, [{
+	    _createClass(Signin, [{
 	        key: 'functionSample',
 	        value: function functionSample() {
 	            console.log('signup!');
@@ -21812,108 +21816,14 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'container' },
+	                null,
+	                _react2.default.createElement(_navbar2.default, null),
 	                _react2.default.createElement(
 	                    'div',
-	                    { id: 'loginbox', style: { marginTop: 50 + 'px' }, className: 'mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2' },
+	                    { className: 'container' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'panel panel-info' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'panel-heading' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-title' },
-	                                'Sign In'
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { style: { float: "right", fontSize: 80 + '%', position: "relative", top: -10 + 'px' } },
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: '#' },
-	                                    'Forgot password?'
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { style: { paddingTop: 10 + 'px' }, className: 'panel-body' },
-	                        _react2.default.createElement('div', { style: { display: 'none' }, id: 'login-alert', className: 'alert alert-danger col-sm-12' }),
-	                        _react2.default.createElement(
-	                            'form',
-	                            { id: 'loginform', className: 'form-horizontal', role: 'form' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    { className: 'input-group-addon' },
-	                                    _react2.default.createElement('i', { className: 'glyphicon glyphicon-user' })
-	                                ),
-	                                _react2.default.createElement('input', { id: 'login-username', type: 'text', className: 'form-control', name: 'username', value: '', placeholder: 'username or email' })
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    { className: 'input-group-addon' },
-	                                    _react2.default.createElement('i', { className: 'glyphicon glyphicon-lock' })
-	                                ),
-	                                _react2.default.createElement('input', { id: 'login-password', type: 'password', className: 'form-control', name: 'password', placeholder: 'password' })
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'input-group' },
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'checkbox' },
-	                                    _react2.default.createElement(
-	                                        'label',
-	                                        null,
-	                                        _react2.default.createElement('input', { id: 'login-remember', type: 'checkbox', name: 'remember', value: '1' }),
-	                                        ' Remember me'
-	                                    )
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { style: { marginTop: 10 + 'px' }, className: 'form-group' },
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'col-sm-12 controls' },
-	                                    _react2.default.createElement(
-	                                        'a',
-	                                        { id: 'btn-login', href: '#', className: 'btn btn-success' },
-	                                        'Login  '
-	                                    )
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'form-group' },
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'col-md-12 control' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { style: { borderTop: 1 + 'px' + 'solid #' + 999, paddingTop: 15 + 'px', fontSize: 85 + '%' } },
-	                                        _react2.default.createElement(
-	                                            'a',
-	                                            { href: '#', onClick: this.functionSample.bind(this) },
-	                                            'Sign Up Here'
-	                                        )
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { id: 'signupbox', style: { display: 'none', marginTop: 50 + 'px' }, className: 'mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2' },
+	                        { id: 'loginbox', style: { marginTop: 50 + 'px' }, className: 'mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2' },
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'panel panel-info' },
@@ -21923,120 +21833,86 @@
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'panel-title' },
-	                                    'Sign Up'
+	                                    'Sign In'
 	                                ),
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { style: { float: 'right', fontSize: 85 + '%', position: 'relative', top: -10 + 'px' } },
+	                                    { style: { float: "right", fontSize: 80 + '%', position: "relative", top: -10 + 'px' } },
 	                                    _react2.default.createElement(
 	                                        'a',
-	                                        { id: 'signinlink', href: '#' },
-	                                        'Sign In'
+	                                        { href: '#' },
+	                                        'Forgot password?'
 	                                    )
 	                                )
-	                            ),
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { style: { paddingTop: 10 + 'px' }, className: 'panel-body' },
+	                            _react2.default.createElement('div', { style: { display: 'none' }, id: 'login-alert', className: 'alert alert-danger col-sm-12' }),
 	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-body' },
+	                                'form',
+	                                { id: 'loginform', className: 'form-horizontal', role: 'form' },
 	                                _react2.default.createElement(
-	                                    'form',
-	                                    { id: 'signupform', className: 'form-horizontal', role: 'form' },
+	                                    'div',
+	                                    { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
+	                                    _react2.default.createElement(
+	                                        'span',
+	                                        { className: 'input-group-addon' },
+	                                        _react2.default.createElement('i', { className: 'glyphicon glyphicon-user' })
+	                                    ),
+	                                    _react2.default.createElement('input', { id: 'login-username', type: 'text', className: 'form-control', name: 'username', value: '', placeholder: 'username or email' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
+	                                    _react2.default.createElement(
+	                                        'span',
+	                                        { className: 'input-group-addon' },
+	                                        _react2.default.createElement('i', { className: 'glyphicon glyphicon-lock' })
+	                                    ),
+	                                    _react2.default.createElement('input', { id: 'login-password', type: 'password', className: 'form-control', name: 'password', placeholder: 'password' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'input-group' },
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        { id: 'signupalert', style: { display: 'none' }, className: 'alert alert-danger' },
+	                                        { className: 'checkbox' },
 	                                        _react2.default.createElement(
-	                                            'p',
+	                                            'label',
 	                                            null,
-	                                            'Error:'
-	                                        ),
-	                                        _react2.default.createElement('span', null)
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { 'for': 'email', className: 'col-md-3 control-label' },
-	                                            'Email'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'col-md-9' },
-	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'email', placeholder: 'Email Address' })
+	                                            _react2.default.createElement('input', { id: 'login-remember', type: 'checkbox', name: 'remember', value: '1' }),
+	                                            ' Remember me'
 	                                        )
-	                                    ),
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { marginTop: 10 + 'px' }, className: 'form-group' },
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        { className: 'form-group' },
+	                                        { className: 'col-sm-12 controls' },
 	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { 'for': 'firstname', className: 'col-md-3 control-label' },
-	                                            'First Name'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'col-md-9' },
-	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'firstname', placeholder: 'First Name' })
+	                                            'a',
+	                                            { id: 'btn-login', href: '#', className: 'btn btn-success' },
+	                                            'Login  '
 	                                        )
-	                                    ),
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'form-group' },
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { 'for': 'lastname', className: 'col-md-3 control-label' },
-	                                            'Last Name'
-	                                        ),
+	                                        { className: 'col-md-12 control' },
 	                                        _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'col-md-9' },
-	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'lastname', placeholder: 'Last Name' })
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { 'for': 'password', className: 'col-md-3 control-label' },
-	                                            'Password'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'col-md-9' },
-	                                            _react2.default.createElement('input', { type: 'password', className: 'form-control', name: 'passwd', placeholder: 'Password' })
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { 'for': 'icode', className: 'col-md-3 control-label' },
-	                                            'Invitation Code'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'col-md-9' },
-	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'icode', placeholder: '' })
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'col-md-offset-3 col-md-9' },
+	                                            { style: { borderTop: 1 + 'px' + 'solid #' + 999, paddingTop: 15 + 'px', fontSize: 85 + '%' } },
 	                                            _react2.default.createElement(
-	                                                'button',
-	                                                { id: 'btn-signup', type: 'button', className: 'btn btn-info' },
-	                                                _react2.default.createElement('i', { className: 'icon-hand-right' }),
-	                                                ' &nbsp Sign Up'
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                'span',
-	                                                { style: { marginLeft: 22 + 'px' } },
-	                                                'or'
+	                                                'a',
+	                                                { href: '#', onClick: this.functionSample.bind(this) },
+	                                                'Sign Up Here'
 	                                            )
 	                                        )
 	                                    )
@@ -22049,10 +21925,10 @@
 	        }
 	    }]);
 	
-	    return SigninAndSignup;
+	    return Signin;
 	}(_react.Component);
 	
-	exports.default = SigninAndSignup; //always capital letter in naming components
+	exports.default = Signin; //always capital letter in naming components
 
 /***/ },
 /* 182 */
