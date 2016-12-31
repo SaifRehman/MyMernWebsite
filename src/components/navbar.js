@@ -5,11 +5,11 @@ class Navbar extends Component{
       <nav className="navbar navbar-default">
          <div className="container-fluid">
             <div className="navbar-header">
-               <a className="navbar-brand">Project Dubai</a>
+               <a className="navbar-brand"> Project Dubai </a>
             </div>
          </div>
       </nav>
     )
   }
 }
-export default Navbar //always capital letter in naming components
+export default Navbar

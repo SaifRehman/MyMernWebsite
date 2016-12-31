@@ -64,7 +64,7 @@
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
-	var _signinAndSignup = __webpack_require__(181);
+	var _signinAndSignup = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/signinAndSignup\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	
 	var _signinAndSignup2 = _interopRequireDefault(_signinAndSignup);
 	
@@ -21702,7 +21702,7 @@
 	            _react2.default.createElement(
 	              "a",
 	              { className: "navbar-brand" },
-	              "Project Dubai"
+	              " Project Dubai "
 	            )
 	          )
 	        )
@@ -21713,154 +21713,7 @@
 	  return Navbar;
 	}(_react.Component);
 	
-	exports.default = Navbar; //always capital letter in naming components
-
-/***/ },
-/* 181 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	   value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var SigninAndSignup = function (_Component) {
-	   _inherits(SigninAndSignup, _Component);
-	
-	   function SigninAndSignup() {
-	      _classCallCheck(this, SigninAndSignup);
-	
-	      return _possibleConstructorReturn(this, (SigninAndSignup.__proto__ || Object.getPrototypeOf(SigninAndSignup)).apply(this, arguments));
-	   }
-	
-	   _createClass(SigninAndSignup, [{
-	      key: "render",
-	      value: function render() {
-	         return _react2.default.createElement(
-	            "div",
-	            { className: "container" },
-	            _react2.default.createElement(
-	               "div",
-	               { id: "loginbox", style: { marginTop: 50 + 'px' }, className: "mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" },
-	               _react2.default.createElement(
-	                  "div",
-	                  { className: "panel panel-info" },
-	                  _react2.default.createElement(
-	                     "div",
-	                     { className: "panel-heading" },
-	                     _react2.default.createElement(
-	                        "div",
-	                        { className: "panel-title" },
-	                        "Sign In"
-	                     ),
-	                     _react2.default.createElement(
-	                        "div",
-	                        { style: { float: "right", fontSize: 80 + '%', position: "relative", top: -10 + 'px' } },
-	                        _react2.default.createElement(
-	                           "a",
-	                           { href: "#" },
-	                           "Forgot password?"
-	                        )
-	                     )
-	                  )
-	               ),
-	               _react2.default.createElement(
-	                  "div",
-	                  { style: { paddingTop: 10 + 'px' }, className: "panel-body" },
-	                  _react2.default.createElement("div", { style: { display: 'none' }, id: "login-alert", className: "alert alert-danger col-sm-12" }),
-	                  _react2.default.createElement(
-	                     "form",
-	                     { id: "loginform", className: "form-horizontal", role: "form" },
-	                     _react2.default.createElement(
-	                        "div",
-	                        { style: { marginBottom: 25 + 'px' }, className: "input-group" },
-	                        _react2.default.createElement(
-	                           "span",
-	                           { className: "input-group-addon" },
-	                           _react2.default.createElement("i", { className: "glyphicon glyphicon-user" })
-	                        ),
-	                        _react2.default.createElement("input", { id: "login-username", type: "text", className: "form-control", name: "username", value: "", placeholder: "username or email" })
-	                     ),
-	                     _react2.default.createElement(
-	                        "div",
-	                        { style: { marginBottom: 25 + 'px' }, className: "input-group" },
-	                        _react2.default.createElement(
-	                           "span",
-	                           { className: "input-group-addon" },
-	                           _react2.default.createElement("i", { className: "glyphicon glyphicon-lock" })
-	                        ),
-	                        _react2.default.createElement("input", { id: "login-password", type: "password", className: "form-control", name: "password", placeholder: "password" })
-	                     ),
-	                     _react2.default.createElement(
-	                        "div",
-	                        { className: "input-group" },
-	                        _react2.default.createElement(
-	                           "div",
-	                           { className: "checkbox" },
-	                           _react2.default.createElement(
-	                              "label",
-	                              null,
-	                              _react2.default.createElement("input", { id: "login-remember", type: "checkbox", name: "remember", value: "1" }),
-	                              " Remember me"
-	                           )
-	                        )
-	                     ),
-	                     _react2.default.createElement(
-	                        "div",
-	                        { style: { marginTop: 10 + 'px' }, className: "form-group" },
-	                        _react2.default.createElement(
-	                           "div",
-	                           { className: "col-sm-12 controls" },
-	                           _react2.default.createElement(
-	                              "a",
-	                              { id: "btn-login", href: "#", className: "btn btn-success" },
-	                              "Login  "
-	                           )
-	                        )
-	                     ),
-	                     _react2.default.createElement(
-	                        "div",
-	                        { className: "form-group" },
-	                        _react2.default.createElement(
-	                           "div",
-	                           { className: "col-md-12 control" },
-	                           _react2.default.createElement(
-	                              "div",
-	                              { style: { borderTop: 1 + 'px' + 'solid #' + 999, paddingTop: 15 + 'px', fontSize: 85 + '%' } },
-	                              _react2.default.createElement(
-	                                 "a",
-	                                 { href: "#", onClick: "$('#loginbox').hide(); $('#signupbox').show()" },
-	                                 "Sign Up Here"
-	                              )
-	                           )
-	                        )
-	                     )
-	                  )
-	               )
-	            )
-	         );
-	      }
-	   }]);
-	
-	   return SigninAndSignup;
-	}(_react.Component);
-	
-	exports.default = SigninAndSignup; //always capital letter in naming components
+	exports.default = Navbar;
 
 /***/ }
 /******/ ]);
