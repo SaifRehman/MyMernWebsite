@@ -24,7 +24,7 @@ class App extends Component{
 }
 ReactDOM.render(
   < Router  history = {hashHistory}>
-  < Route path = "/" component={LandingPage}>
-  </Route>
+  < Route path = "/" component={LandingPage}></Route>
+  < Route path = "signin" component={Signin}> </Route>
   </Router>
   ,document.getElementById('root'))

@@ -128,7 +128,12 @@
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.hashHistory },
-	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _landingpage2.default })
+	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _landingpage2.default }),
+	  _react2.default.createElement(
+	    _reactRouter.Route,
+	    { path: 'signin', component: _signin2.default },
+	    ' '
+	  )
 	), document.getElementById('root'));
 
 /***/ },
@@ -21687,7 +21692,7 @@
 /* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -21698,6 +21703,8 @@
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(188);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -21717,48 +21724,48 @@
 	    }
 	
 	    _createClass(Navbar, [{
-	        key: "render",
+	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
-	                "div",
+	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    "nav",
-	                    { className: "navbar navbar-default navbar-fixed-top topnav", role: "navigation" },
+	                    'nav',
+	                    { className: 'navbar navbar-default navbar-fixed-top topnav', role: 'navigation' },
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "container topnav" },
+	                        'div',
+	                        { className: 'container topnav' },
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "navbar-header" },
+	                            'div',
+	                            { className: 'navbar-header' },
 	                            _react2.default.createElement(
-	                                "a",
-	                                { className: "navbar-brand topnav", href: "#" },
-	                                "StarupProject"
+	                                'a',
+	                                { className: 'navbar-brand topnav', href: '#' },
+	                                'StarupProject'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "collapse navbar-collapse", id: "bs-example-navbar-collapse-1" },
+	                            'div',
+	                            { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
 	                            _react2.default.createElement(
-	                                "ul",
-	                                { className: "nav navbar-nav navbar-right" },
+	                                'ul',
+	                                { className: 'nav navbar-nav navbar-right' },
 	                                _react2.default.createElement(
-	                                    "li",
+	                                    'li',
 	                                    null,
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "#login" },
-	                                        "Login"
+	                                        _reactRouter.Link,
+	                                        { to: 'signin' },
+	                                        'Login'
 	                                    )
 	                                ),
 	                                _react2.default.createElement(
-	                                    "li",
+	                                    'li',
 	                                    null,
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "#signup" },
-	                                        "Signup"
+	                                        'a',
+	                                        { href: '#signup' },
+	                                        'Signup'
 	                                    )
 	                                )
 	                            )
