@@ -22383,7 +22383,7 @@
 	                                _react2.default.createElement(
 	                                    "h2",
 	                                    null,
-	                                    "Connect to Start Bootstrap:"
+	                                    "Connect With Us"
 	                                )
 	                            ),
 	                            _react2.default.createElement(
@@ -22404,21 +22404,6 @@
 	                                                "span",
 	                                                { className: "network-name" },
 	                                                "Twitter"
-	                                            )
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        "li",
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            "a",
-	                                            { href: "https://github.com/IronSummitMedia/startbootstrap", className: "btn btn-default btn-lg" },
-	                                            _react2.default.createElement("i", { className: "fa fa-github fa-fw" }),
-	                                            " ",
-	                                            _react2.default.createElement(
-	                                                "span",
-	                                                { className: "network-name" },
-	                                                "Github"
 	                                            )
 	                                        )
 	                                    ),
