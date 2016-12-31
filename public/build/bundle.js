@@ -116,7 +116,6 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_navbar2.default, null),
-	        _react2.default.createElement(_signup2.default, null),
 	        _react2.default.createElement(_topbanner2.default, null),
 	        _react2.default.createElement(_landingpagefirstData2.default, null),
 	        _react2.default.createElement(_landingpagesecondData2.default, null),

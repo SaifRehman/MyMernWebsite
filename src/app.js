@@ -17,7 +17,6 @@ class App extends Component{
     return(
       <div>
           <Navbar/>
-          <Signup/>
           <TopBanner/>
           <LandingPageFirstData/>
           <LandingPageSecondData/>
