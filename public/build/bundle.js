@@ -88,6 +88,10 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
+	var _signup = __webpack_require__(187);
+	
+	var _signup2 = _interopRequireDefault(_signup);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -116,6 +120,7 @@
 	        _react2.default.createElement(_landingpagefirstData2.default, null),
 	        _react2.default.createElement(_landingpagesecondData2.default, null),
 	        _react2.default.createElement(_landingpagebanner2.default, null),
+	        _react2.default.createElement(_signup2.default, null),
 	        _react2.default.createElement(_footer2.default, null)
 	      );
 	    }
@@ -22386,6 +22391,12 @@
 	}(_react.Component);
 	
 	exports.default = Footer;
+
+/***/ },
+/* 187 */
+/***/ function(module, exports) {
+
+
 
 /***/ }
 /******/ ]);

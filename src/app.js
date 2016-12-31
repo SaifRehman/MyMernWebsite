@@ -8,6 +8,7 @@ import LandingPageFirstData from './components/landingpagefirstData'
 import LandingPageSecondData from './components/landingpagesecondData'
 import LandingPageBanner from './components/landingpagebanner'
 import Footer from './components/footer'
+import Signup from './components/signup'
 
 
 
@@ -20,6 +21,7 @@ class App extends Component{
           <LandingPageFirstData/>
           <LandingPageSecondData/>
           <LandingPageBanner/>
+          <Signup/>
           <Footer/>
     </div>
     )
