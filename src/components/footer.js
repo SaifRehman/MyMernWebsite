@@ -4,23 +4,16 @@ class Footer extends Component{
     return(
       <div>
       <footer>
-      <div className="container">
-          <div className="row">
-              <div className="col-lg-12">
-                  <ul className="list-inline">
-                      <li>
-                          <a href="#">Signin</a>
-                      </li>
-                      <li className="footer-menu-divider"></li>
-                      <li>
-                          <a href="#about">Signup</a>
-                      </li>
-                      <li className="footer-menu-divider"></li>
-                  </ul>
+          <div className="container">
+              <div className="row">
+                  <div className="col-lg-12">
+                      <ul className="list-inline">
+                      </ul>
+                      <p className="copyright text-muted small">Copyright &copy; StartupProject 2017. All Rights Reserved</p>
+                  </div>
               </div>
           </div>
-      </div>
-  </footer
+      </footer>
   </div>
     )
   }

@@ -7,6 +7,7 @@ import TopBanner from './components/topbanner'
 import LandingPageFirstData from './components/landingpagefirstData'
 import LandingPageSecondData from './components/landingpagesecondData'
 import LandingPageBanner from './components/landingpagebanner'
+import Footer from './components/footer'
 
 
 
@@ -14,11 +15,12 @@ class App extends Component{
   render(){
     return(
       <div>
-          <Navbar></Navbar>
-          <TopBanner></TopBanner>
+          <Navbar/>
+          <TopBanner/>
           <LandingPageFirstData/>
           <LandingPageSecondData/>
           <LandingPageBanner/>
+          <Footer/>
     </div>
     )
   }

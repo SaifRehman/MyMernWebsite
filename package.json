@@ -15,6 +15,7 @@
     "mysql": "^2.12.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "resmetry": "^1.0.2",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
