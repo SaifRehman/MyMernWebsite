@@ -2,12 +2,12 @@ import React,{Component} from 'react'
 import ReactDOM from 'react-dom'
 import ZoneComponent from './components/zonecomponent'
 import Navbar from './components/navbar'
-import Signin from './components/signin'
 import TopBanner from './components/topbanner'
 import LandingPageFirstData from './components/landingpagefirstData'
 import LandingPageSecondData from './components/landingpagesecondData'
 import LandingPageBanner from './components/landingpagebanner'
 import Footer from './components/footer'
+import Signin from './components/signin'
 import Signup from './components/signup'
 
 
@@ -17,11 +17,11 @@ class App extends Component{
     return(
       <div>
           <Navbar/>
+          <Signup/>
           <TopBanner/>
           <LandingPageFirstData/>
           <LandingPageSecondData/>
           <LandingPageBanner/>
-          <Signup/>
           <Footer/>
     </div>
     )

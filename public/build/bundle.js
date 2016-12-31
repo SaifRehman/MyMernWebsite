@@ -64,29 +64,29 @@
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
-	var _signin = __webpack_require__(181);
-	
-	var _signin2 = _interopRequireDefault(_signin);
-	
-	var _topbanner = __webpack_require__(182);
+	var _topbanner = __webpack_require__(181);
 	
 	var _topbanner2 = _interopRequireDefault(_topbanner);
 	
-	var _landingpagefirstData = __webpack_require__(183);
+	var _landingpagefirstData = __webpack_require__(182);
 	
 	var _landingpagefirstData2 = _interopRequireDefault(_landingpagefirstData);
 	
-	var _landingpagesecondData = __webpack_require__(184);
+	var _landingpagesecondData = __webpack_require__(183);
 	
 	var _landingpagesecondData2 = _interopRequireDefault(_landingpagesecondData);
 	
-	var _landingpagebanner = __webpack_require__(185);
+	var _landingpagebanner = __webpack_require__(184);
 	
 	var _landingpagebanner2 = _interopRequireDefault(_landingpagebanner);
 	
-	var _footer = __webpack_require__(186);
+	var _footer = __webpack_require__(185);
 	
 	var _footer2 = _interopRequireDefault(_footer);
+	
+	var _signin = __webpack_require__(186);
+	
+	var _signin2 = _interopRequireDefault(_signin);
 	
 	var _signup = __webpack_require__(187);
 	
@@ -116,11 +116,11 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_navbar2.default, null),
+	        _react2.default.createElement(_signup2.default, null),
 	        _react2.default.createElement(_topbanner2.default, null),
 	        _react2.default.createElement(_landingpagefirstData2.default, null),
 	        _react2.default.createElement(_landingpagesecondData2.default, null),
 	        _react2.default.createElement(_landingpagebanner2.default, null),
-	        _react2.default.createElement(_signup2.default, null),
 	        _react2.default.createElement(_footer2.default, null)
 	      );
 	    }
@@ -21778,6 +21778,463 @@
 /* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var TopBanner = function (_Component) {
+	    _inherits(TopBanner, _Component);
+	
+	    function TopBanner() {
+	        _classCallCheck(this, TopBanner);
+	
+	        return _possibleConstructorReturn(this, (TopBanner.__proto__ || Object.getPrototypeOf(TopBanner)).apply(this, arguments));
+	    }
+	
+	    _createClass(TopBanner, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement("a", { name: "about" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "intro-header" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "row" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-12" },
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "intro-message" },
+	                                    _react2.default.createElement(
+	                                        "h1",
+	                                        null,
+	                                        "StarupProject"
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "h3",
+	                                        null,
+	                                        "Database for Young Talent"
+	                                    ),
+	                                    _react2.default.createElement("hr", { className: "intro-divider" }),
+	                                    _react2.default.createElement(
+	                                        "ul",
+	                                        { className: "list-inline intro-social-buttons" },
+	                                        _react2.default.createElement(
+	                                            "li",
+	                                            null,
+	                                            _react2.default.createElement(
+	                                                "a",
+	                                                { href: "https://twitter.com/SBootstrap", className: "btn btn-default btn-lg" },
+	                                                _react2.default.createElement("i", { className: "fa fa-twitter fa-fw" }),
+	                                                " ",
+	                                                _react2.default.createElement(
+	                                                    "span",
+	                                                    { className: "network-name" },
+	                                                    "Twitter"
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            "li",
+	                                            null,
+	                                            _react2.default.createElement(
+	                                                "a",
+	                                                { href: "#", className: "btn btn-default btn-lg" },
+	                                                _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw" }),
+	                                                " ",
+	                                                _react2.default.createElement(
+	                                                    "span",
+	                                                    { className: "network-name" },
+	                                                    "Linkedin"
+	                                                )
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return TopBanner;
+	}(_react.Component);
+	
+	exports.default = TopBanner;
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var LandingPageFirstData = function (_Component) {
+	    _inherits(LandingPageFirstData, _Component);
+	
+	    function LandingPageFirstData() {
+	        _classCallCheck(this, LandingPageFirstData);
+	
+	        return _possibleConstructorReturn(this, (LandingPageFirstData.__proto__ || Object.getPrototypeOf(LandingPageFirstData)).apply(this, arguments));
+	    }
+	
+	    _createClass(LandingPageFirstData, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement("a", { name: "services" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "content-section-a" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "row" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-5 col-sm-6" },
+	                                _react2.default.createElement("hr", { className: "section-heading-spacer" }),
+	                                _react2.default.createElement("div", { className: "clearfix" }),
+	                                _react2.default.createElement(
+	                                    "h2",
+	                                    { className: "section-heading" },
+	                                    "Landing Page Data "
+	                                ),
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    { className: "lead" },
+	                                    " Data here ",
+	                                    _react2.default.createElement("a", { target: "_blank", href: "http://join.deathtothestockphoto.com/" })
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-5 col-lg-offset-2 col-sm-6" },
+	                                _react2.default.createElement("img", { className: "img-responsive", src: "img/ipad.png", alt: "" })
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return LandingPageFirstData;
+	}(_react.Component);
+	
+	exports.default = LandingPageFirstData;
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var LandingPageSecondData = function (_Component) {
+	    _inherits(LandingPageSecondData, _Component);
+	
+	    function LandingPageSecondData() {
+	        _classCallCheck(this, LandingPageSecondData);
+	
+	        return _possibleConstructorReturn(this, (LandingPageSecondData.__proto__ || Object.getPrototypeOf(LandingPageSecondData)).apply(this, arguments));
+	    }
+	
+	    _createClass(LandingPageSecondData, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "content-section-b" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "row" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6" },
+	                                _react2.default.createElement("hr", { className: "section-heading-spacer" }),
+	                                _react2.default.createElement("div", { className: "clearfix" }),
+	                                _react2.default.createElement(
+	                                    "h2",
+	                                    { className: "section-heading" },
+	                                    "Landing Page Data"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    { className: "lead" },
+	                                    " Data here ",
+	                                    _react2.default.createElement("a", { target: "_blank", href: "http://www.psdcovers.com/" })
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-5 col-sm-pull-6  col-sm-6" },
+	                                _react2.default.createElement("img", { className: "img-responsive", src: "img/dog.png", alt: "" })
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return LandingPageSecondData;
+	}(_react.Component);
+	
+	exports.default = LandingPageSecondData;
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var LandingPageBanner = function (_Component) {
+	    _inherits(LandingPageBanner, _Component);
+	
+	    function LandingPageBanner() {
+	        _classCallCheck(this, LandingPageBanner);
+	
+	        return _possibleConstructorReturn(this, (LandingPageBanner.__proto__ || Object.getPrototypeOf(LandingPageBanner)).apply(this, arguments));
+	    }
+	
+	    _createClass(LandingPageBanner, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement("a", { name: "contact" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "banner" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "row" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-6" },
+	                                _react2.default.createElement(
+	                                    "h2",
+	                                    null,
+	                                    "Connect With Us"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-6" },
+	                                _react2.default.createElement(
+	                                    "ul",
+	                                    { className: "list-inline banner-social-buttons" },
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "https://twitter.com/SBootstrap", className: "btn btn-default btn-lg" },
+	                                            _react2.default.createElement("i", { className: "fa fa-twitter fa-fw" }),
+	                                            " ",
+	                                            _react2.default.createElement(
+	                                                "span",
+	                                                { className: "network-name" },
+	                                                "Twitter"
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#", className: "btn btn-default btn-lg" },
+	                                            _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw" }),
+	                                            " ",
+	                                            _react2.default.createElement(
+	                                                "span",
+	                                                { className: "network-name" },
+	                                                "Linkedin"
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return LandingPageBanner;
+	}(_react.Component);
+	
+	exports.default = LandingPageBanner;
+
+/***/ },
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Footer = function (_Component) {
+	    _inherits(Footer, _Component);
+	
+	    function Footer() {
+	        _classCallCheck(this, Footer);
+	
+	        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+	    }
+	
+	    _createClass(Footer, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement(
+	                    "footer",
+	                    null,
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "row" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-12" },
+	                                _react2.default.createElement("ul", { className: "list-inline" }),
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    { className: "copyright text-muted small" },
+	                                    "Copyright \xA9 StartupProject 2017. All Rights Reserved"
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Footer;
+	}(_react.Component);
+	
+	exports.default = Footer;
+
+/***/ },
+/* 186 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -21936,467 +22393,114 @@
 	exports.default = Signin; //always capital letter in naming components
 
 /***/ },
-/* 182 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var TopBanner = function (_Component) {
-	    _inherits(TopBanner, _Component);
-	
-	    function TopBanner() {
-	        _classCallCheck(this, TopBanner);
-	
-	        return _possibleConstructorReturn(this, (TopBanner.__proto__ || Object.getPrototypeOf(TopBanner)).apply(this, arguments));
-	    }
-	
-	    _createClass(TopBanner, [{
-	        key: "render",
-	        value: function render() {
-	            return _react2.default.createElement(
-	                "div",
-	                null,
-	                _react2.default.createElement("a", { name: "about" }),
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "intro-header" },
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "container" },
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "row" },
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "col-lg-12" },
-	                                _react2.default.createElement(
-	                                    "div",
-	                                    { className: "intro-message" },
-	                                    _react2.default.createElement(
-	                                        "h1",
-	                                        null,
-	                                        "StarupProject"
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        "h3",
-	                                        null,
-	                                        "Database for Young Talent"
-	                                    ),
-	                                    _react2.default.createElement("hr", { className: "intro-divider" }),
-	                                    _react2.default.createElement(
-	                                        "ul",
-	                                        { className: "list-inline intro-social-buttons" },
-	                                        _react2.default.createElement(
-	                                            "li",
-	                                            null,
-	                                            _react2.default.createElement(
-	                                                "a",
-	                                                { href: "https://twitter.com/SBootstrap", className: "btn btn-default btn-lg" },
-	                                                _react2.default.createElement("i", { className: "fa fa-twitter fa-fw" }),
-	                                                " ",
-	                                                _react2.default.createElement(
-	                                                    "span",
-	                                                    { className: "network-name" },
-	                                                    "Twitter"
-	                                                )
-	                                            )
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            "li",
-	                                            null,
-	                                            _react2.default.createElement(
-	                                                "a",
-	                                                { href: "#", className: "btn btn-default btn-lg" },
-	                                                _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw" }),
-	                                                " ",
-	                                                _react2.default.createElement(
-	                                                    "span",
-	                                                    { className: "network-name" },
-	                                                    "Linkedin"
-	                                                )
-	                                            )
-	                                        )
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return TopBanner;
-	}(_react.Component);
-	
-	exports.default = TopBanner;
-
-/***/ },
-/* 183 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var LandingPageFirstData = function (_Component) {
-	    _inherits(LandingPageFirstData, _Component);
-	
-	    function LandingPageFirstData() {
-	        _classCallCheck(this, LandingPageFirstData);
-	
-	        return _possibleConstructorReturn(this, (LandingPageFirstData.__proto__ || Object.getPrototypeOf(LandingPageFirstData)).apply(this, arguments));
-	    }
-	
-	    _createClass(LandingPageFirstData, [{
-	        key: "render",
-	        value: function render() {
-	            return _react2.default.createElement(
-	                "div",
-	                null,
-	                _react2.default.createElement("a", { name: "services" }),
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "content-section-a" },
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "container" },
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "row" },
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "col-lg-5 col-sm-6" },
-	                                _react2.default.createElement("hr", { className: "section-heading-spacer" }),
-	                                _react2.default.createElement("div", { className: "clearfix" }),
-	                                _react2.default.createElement(
-	                                    "h2",
-	                                    { className: "section-heading" },
-	                                    "Landing Page Data "
-	                                ),
-	                                _react2.default.createElement(
-	                                    "p",
-	                                    { className: "lead" },
-	                                    " Data here ",
-	                                    _react2.default.createElement("a", { target: "_blank", href: "http://join.deathtothestockphoto.com/" })
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "col-lg-5 col-lg-offset-2 col-sm-6" },
-	                                _react2.default.createElement("img", { className: "img-responsive", src: "img/ipad.png", alt: "" })
-	                            )
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return LandingPageFirstData;
-	}(_react.Component);
-	
-	exports.default = LandingPageFirstData;
-
-/***/ },
-/* 184 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var LandingPageSecondData = function (_Component) {
-	    _inherits(LandingPageSecondData, _Component);
-	
-	    function LandingPageSecondData() {
-	        _classCallCheck(this, LandingPageSecondData);
-	
-	        return _possibleConstructorReturn(this, (LandingPageSecondData.__proto__ || Object.getPrototypeOf(LandingPageSecondData)).apply(this, arguments));
-	    }
-	
-	    _createClass(LandingPageSecondData, [{
-	        key: "render",
-	        value: function render() {
-	            return _react2.default.createElement(
-	                "div",
-	                null,
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "content-section-b" },
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "container" },
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "row" },
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6" },
-	                                _react2.default.createElement("hr", { className: "section-heading-spacer" }),
-	                                _react2.default.createElement("div", { className: "clearfix" }),
-	                                _react2.default.createElement(
-	                                    "h2",
-	                                    { className: "section-heading" },
-	                                    "Landing Page Data"
-	                                ),
-	                                _react2.default.createElement(
-	                                    "p",
-	                                    { className: "lead" },
-	                                    " Data here ",
-	                                    _react2.default.createElement("a", { target: "_blank", href: "http://www.psdcovers.com/" })
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "col-lg-5 col-sm-pull-6  col-sm-6" },
-	                                _react2.default.createElement("img", { className: "img-responsive", src: "img/dog.png", alt: "" })
-	                            )
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return LandingPageSecondData;
-	}(_react.Component);
-	
-	exports.default = LandingPageSecondData;
-
-/***/ },
-/* 185 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var LandingPageBanner = function (_Component) {
-	    _inherits(LandingPageBanner, _Component);
-	
-	    function LandingPageBanner() {
-	        _classCallCheck(this, LandingPageBanner);
-	
-	        return _possibleConstructorReturn(this, (LandingPageBanner.__proto__ || Object.getPrototypeOf(LandingPageBanner)).apply(this, arguments));
-	    }
-	
-	    _createClass(LandingPageBanner, [{
-	        key: "render",
-	        value: function render() {
-	            return _react2.default.createElement(
-	                "div",
-	                null,
-	                _react2.default.createElement("a", { name: "contact" }),
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "banner" },
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "container" },
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "row" },
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "col-lg-6" },
-	                                _react2.default.createElement(
-	                                    "h2",
-	                                    null,
-	                                    "Connect With Us"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "col-lg-6" },
-	                                _react2.default.createElement(
-	                                    "ul",
-	                                    { className: "list-inline banner-social-buttons" },
-	                                    _react2.default.createElement(
-	                                        "li",
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            "a",
-	                                            { href: "https://twitter.com/SBootstrap", className: "btn btn-default btn-lg" },
-	                                            _react2.default.createElement("i", { className: "fa fa-twitter fa-fw" }),
-	                                            " ",
-	                                            _react2.default.createElement(
-	                                                "span",
-	                                                { className: "network-name" },
-	                                                "Twitter"
-	                                            )
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        "li",
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            "a",
-	                                            { href: "#", className: "btn btn-default btn-lg" },
-	                                            _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw" }),
-	                                            " ",
-	                                            _react2.default.createElement(
-	                                                "span",
-	                                                { className: "network-name" },
-	                                                "Linkedin"
-	                                            )
-	                                        )
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return LandingPageBanner;
-	}(_react.Component);
-	
-	exports.default = LandingPageBanner;
-
-/***/ },
-/* 186 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Footer = function (_Component) {
-	    _inherits(Footer, _Component);
-	
-	    function Footer() {
-	        _classCallCheck(this, Footer);
-	
-	        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-	    }
-	
-	    _createClass(Footer, [{
-	        key: "render",
-	        value: function render() {
-	            return _react2.default.createElement(
-	                "div",
-	                null,
-	                _react2.default.createElement(
-	                    "footer",
-	                    null,
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "container" },
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "row" },
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "col-lg-12" },
-	                                _react2.default.createElement("ul", { className: "list-inline" }),
-	                                _react2.default.createElement(
-	                                    "p",
-	                                    { className: "copyright text-muted small" },
-	                                    "Copyright \xA9 StartupProject 2017. All Rights Reserved"
-	                                )
-	                            )
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return Footer;
-	}(_react.Component);
-	
-	exports.default = Footer;
-
-/***/ },
 /* 187 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _navbar = __webpack_require__(180);
+	
+	var _navbar2 = _interopRequireDefault(_navbar);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Signup = function (_Component) {
+	    _inherits(Signup, _Component);
+	
+	    function Signup() {
+	        _classCallCheck(this, Signup);
+	
+	        return _possibleConstructorReturn(this, (Signup.__proto__ || Object.getPrototypeOf(Signup)).apply(this, arguments));
+	    }
+	
+	    _createClass(Signup, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { id: 'signupbox', style: { display: 'none', marginTop: 50 + 'px' }, className: 'mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'panel panel-info' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'panel-heading' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'panel-title' },
+	                                'Sign Up'
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { style: { float: 'right', fontSize: 85 + '%', position: 'relative', top: -10 + 'px' } },
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { id: 'signinlink', href: '#' },
+	                                    'Sign In'
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'panel-body' },
+	                            _react2.default.createElement(
+	                                'form',
+	                                { id: 'signupform', className: 'form-horizontal', role: 'form' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { id: 'signupalert', style: { display: 'none' }, className: 'alert alert-danger' },
+	                                    _react2.default.createElement(
+	                                        'p',
+	                                        null,
+	                                        'Error:'
+	                                    ),
+	                                    _react2.default.createElement('span', null)
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'form-group' },
+	                                    _react2.default.createElement(
+	                                        'label',
+	                                        { 'for': 'email', className: 'col-md-3 control-label' },
+	                                        'Email'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'col-md-9' },
+	                                        _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'email', placeholder: 'Email Address' })
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Signup;
+	}(_react.Component);
+	
+	exports.default = Signup;
 
 /***/ }
 /******/ ]);

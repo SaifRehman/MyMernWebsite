@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Navbar from './navbar'
-
 class Signin extends Component{
   functionSample()
   {
