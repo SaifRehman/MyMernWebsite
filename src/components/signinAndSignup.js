@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 class SigninAndSignup extends Component{
+  functionSample()
+  {
+    console.log('signup!');
+  }
   render(){
     return(
       <div className="container">
@@ -37,7 +41,7 @@ class SigninAndSignup extends Component{
                       <div className="form-group">
                           <div className="col-md-12 control">
                               <div style={{borderTop: 1+ 'px' + 'solid #'+999 , paddingTop:15+ 'px', fontSize:85+ '%'}}>
-                                  <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                  <a href="#" onClick={this.functionSample.bind(this)}>
       Sign Up Here
       </a>
                               </div>
@@ -49,7 +53,7 @@ class SigninAndSignup extends Component{
                   <div className="panel panel-info">
                       <div className="panel-heading">
                           <div className="panel-title">Sign Up</div>
-                          <div style={{float:'right', fontSize: 85+'%', position: 'relative', top:-10+'px'}}><a id="signinlink" href="#" onClick=$('#signupbox').hide(); $('#loginbox').show()>Sign In</a></div>
+                          <div style={{float:'right', fontSize: 85+'%', position: 'relative', top:-10+'px'}}><a id="signinlink" href="#">Sign In</a></div>
                       </div>
                       <div className="panel-body">
                           <form id="signupform" className="form-horizontal" role="form">
@@ -90,7 +94,7 @@ class SigninAndSignup extends Component{
                               <div className="form-group">
                                   <div className="col-md-offset-3 col-md-9">
                                       <button id="btn-signup" type="button" className="btn btn-info"><i className="icon-hand-right"></i> &nbsp Sign Up</button>
-                                      <span style={{marginLeft:8+'px'}}>or</span>
+                                      <span style={{marginLeft:22+'px'}}>or</span>
                                   </div>
                               </div>
                           </form>

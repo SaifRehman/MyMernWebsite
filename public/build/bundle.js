@@ -64,9 +64,25 @@
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
-	var _signinAndSignup = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/signinAndSignup\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _signinAndSignup = __webpack_require__(181);
 	
 	var _signinAndSignup2 = _interopRequireDefault(_signinAndSignup);
+	
+	var _topbanner = __webpack_require__(182);
+	
+	var _topbanner2 = _interopRequireDefault(_topbanner);
+	
+	var _landingpagefirstData = __webpack_require__(183);
+	
+	var _landingpagefirstData2 = _interopRequireDefault(_landingpagefirstData);
+	
+	var _landingpagesecondData = __webpack_require__(184);
+	
+	var _landingpagesecondData2 = _interopRequireDefault(_landingpagesecondData);
+	
+	var _landingpagebanner = __webpack_require__(185);
+	
+	var _landingpagebanner2 = _interopRequireDefault(_landingpagebanner);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -92,7 +108,10 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_navbar2.default, null),
-	        _react2.default.createElement(_signinAndSignup2.default, null)
+	        _react2.default.createElement(_topbanner2.default, null),
+	        _react2.default.createElement(_landingpagefirstData2.default, null),
+	        _react2.default.createElement(_landingpagesecondData2.default, null),
+	        _react2.default.createElement(_landingpagebanner2.default, null)
 	      );
 	    }
 	  }]);
@@ -21661,7 +21680,7 @@
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -21679,41 +21698,758 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var Navbar = function (_Component) {
-	  _inherits(Navbar, _Component);
+	    _inherits(Navbar, _Component);
 	
-	  function Navbar() {
-	    _classCallCheck(this, Navbar);
+	    function Navbar() {
+	        _classCallCheck(this, Navbar);
 	
-	    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
-	  }
-	
-	  _createClass(Navbar, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "nav",
-	        { className: "navbar navbar-default" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "container-fluid" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "navbar-header" },
-	            _react2.default.createElement(
-	              "a",
-	              { className: "navbar-brand" },
-	              " Project Dubai "
-	            )
-	          )
-	        )
-	      );
+	        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
 	    }
-	  }]);
 	
-	  return Navbar;
+	    _createClass(Navbar, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement(
+	                    "nav",
+	                    { className: "navbar navbar-default navbar-fixed-top topnav", role: "navigation" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container topnav" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "navbar-header" },
+	                            _react2.default.createElement(
+	                                "a",
+	                                { className: "navbar-brand topnav", href: "#" },
+	                                "StarupProject"
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "collapse navbar-collapse", id: "bs-example-navbar-collapse-1" },
+	                            _react2.default.createElement(
+	                                "ul",
+	                                { className: "nav navbar-nav navbar-right" },
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        "a",
+	                                        { href: "#login" },
+	                                        "Login"
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        "a",
+	                                        { href: "#signup" },
+	                                        "Signup"
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Navbar;
 	}(_react.Component);
 	
 	exports.default = Navbar;
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var SigninAndSignup = function (_Component) {
+	    _inherits(SigninAndSignup, _Component);
+	
+	    function SigninAndSignup() {
+	        _classCallCheck(this, SigninAndSignup);
+	
+	        return _possibleConstructorReturn(this, (SigninAndSignup.__proto__ || Object.getPrototypeOf(SigninAndSignup)).apply(this, arguments));
+	    }
+	
+	    _createClass(SigninAndSignup, [{
+	        key: 'functionSample',
+	        value: function functionSample() {
+	            console.log('signup!');
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { id: 'loginbox', style: { marginTop: 50 + 'px' }, className: 'mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'panel panel-info' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'panel-heading' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'panel-title' },
+	                                'Sign In'
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { style: { float: "right", fontSize: 80 + '%', position: "relative", top: -10 + 'px' } },
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: '#' },
+	                                    'Forgot password?'
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { style: { paddingTop: 10 + 'px' }, className: 'panel-body' },
+	                        _react2.default.createElement('div', { style: { display: 'none' }, id: 'login-alert', className: 'alert alert-danger col-sm-12' }),
+	                        _react2.default.createElement(
+	                            'form',
+	                            { id: 'loginform', className: 'form-horizontal', role: 'form' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    { className: 'input-group-addon' },
+	                                    _react2.default.createElement('i', { className: 'glyphicon glyphicon-user' })
+	                                ),
+	                                _react2.default.createElement('input', { id: 'login-username', type: 'text', className: 'form-control', name: 'username', value: '', placeholder: 'username or email' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    { className: 'input-group-addon' },
+	                                    _react2.default.createElement('i', { className: 'glyphicon glyphicon-lock' })
+	                                ),
+	                                _react2.default.createElement('input', { id: 'login-password', type: 'password', className: 'form-control', name: 'password', placeholder: 'password' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'input-group' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'checkbox' },
+	                                    _react2.default.createElement(
+	                                        'label',
+	                                        null,
+	                                        _react2.default.createElement('input', { id: 'login-remember', type: 'checkbox', name: 'remember', value: '1' }),
+	                                        ' Remember me'
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { style: { marginTop: 10 + 'px' }, className: 'form-group' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'col-sm-12 controls' },
+	                                    _react2.default.createElement(
+	                                        'a',
+	                                        { id: 'btn-login', href: '#', className: 'btn btn-success' },
+	                                        'Login  '
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'form-group' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'col-md-12 control' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { style: { borderTop: 1 + 'px' + 'solid #' + 999, paddingTop: 15 + 'px', fontSize: 85 + '%' } },
+	                                        _react2.default.createElement(
+	                                            'a',
+	                                            { href: '#', onClick: this.functionSample.bind(this) },
+	                                            'Sign Up Here'
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { id: 'signupbox', style: { display: 'none', marginTop: 50 + 'px' }, className: 'mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'panel panel-info' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'panel-heading' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'panel-title' },
+	                                    'Sign Up'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { float: 'right', fontSize: 85 + '%', position: 'relative', top: -10 + 'px' } },
+	                                    _react2.default.createElement(
+	                                        'a',
+	                                        { id: 'signinlink', href: '#' },
+	                                        'Sign In'
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'panel-body' },
+	                                _react2.default.createElement(
+	                                    'form',
+	                                    { id: 'signupform', className: 'form-horizontal', role: 'form' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { id: 'signupalert', style: { display: 'none' }, className: 'alert alert-danger' },
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            null,
+	                                            'Error:'
+	                                        ),
+	                                        _react2.default.createElement('span', null)
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'form-group' },
+	                                        _react2.default.createElement(
+	                                            'label',
+	                                            { 'for': 'email', className: 'col-md-3 control-label' },
+	                                            'Email'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'col-md-9' },
+	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'email', placeholder: 'Email Address' })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'form-group' },
+	                                        _react2.default.createElement(
+	                                            'label',
+	                                            { 'for': 'firstname', className: 'col-md-3 control-label' },
+	                                            'First Name'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'col-md-9' },
+	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'firstname', placeholder: 'First Name' })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'form-group' },
+	                                        _react2.default.createElement(
+	                                            'label',
+	                                            { 'for': 'lastname', className: 'col-md-3 control-label' },
+	                                            'Last Name'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'col-md-9' },
+	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'lastname', placeholder: 'Last Name' })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'form-group' },
+	                                        _react2.default.createElement(
+	                                            'label',
+	                                            { 'for': 'password', className: 'col-md-3 control-label' },
+	                                            'Password'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'col-md-9' },
+	                                            _react2.default.createElement('input', { type: 'password', className: 'form-control', name: 'passwd', placeholder: 'Password' })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'form-group' },
+	                                        _react2.default.createElement(
+	                                            'label',
+	                                            { 'for': 'icode', className: 'col-md-3 control-label' },
+	                                            'Invitation Code'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'col-md-9' },
+	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'icode', placeholder: '' })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'form-group' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'col-md-offset-3 col-md-9' },
+	                                            _react2.default.createElement(
+	                                                'button',
+	                                                { id: 'btn-signup', type: 'button', className: 'btn btn-info' },
+	                                                _react2.default.createElement('i', { className: 'icon-hand-right' }),
+	                                                ' &nbsp Sign Up'
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'span',
+	                                                { style: { marginLeft: 22 + 'px' } },
+	                                                'or'
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return SigninAndSignup;
+	}(_react.Component);
+	
+	exports.default = SigninAndSignup; //always capital letter in naming components
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var TopBanner = function (_Component) {
+	    _inherits(TopBanner, _Component);
+	
+	    function TopBanner() {
+	        _classCallCheck(this, TopBanner);
+	
+	        return _possibleConstructorReturn(this, (TopBanner.__proto__ || Object.getPrototypeOf(TopBanner)).apply(this, arguments));
+	    }
+	
+	    _createClass(TopBanner, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement("a", { name: "about" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "intro-header" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "row" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-12" },
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "intro-message" },
+	                                    _react2.default.createElement(
+	                                        "h1",
+	                                        null,
+	                                        "StarupProject"
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "h3",
+	                                        null,
+	                                        "Database for Young Talent"
+	                                    ),
+	                                    _react2.default.createElement("hr", { className: "intro-divider" }),
+	                                    _react2.default.createElement(
+	                                        "ul",
+	                                        { className: "list-inline intro-social-buttons" },
+	                                        _react2.default.createElement(
+	                                            "li",
+	                                            null,
+	                                            _react2.default.createElement(
+	                                                "a",
+	                                                { href: "https://twitter.com/SBootstrap", className: "btn btn-default btn-lg" },
+	                                                _react2.default.createElement("i", { className: "fa fa-twitter fa-fw" }),
+	                                                " ",
+	                                                _react2.default.createElement(
+	                                                    "span",
+	                                                    { className: "network-name" },
+	                                                    "Twitter"
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            "li",
+	                                            null,
+	                                            _react2.default.createElement(
+	                                                "a",
+	                                                { href: "#", className: "btn btn-default btn-lg" },
+	                                                _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw" }),
+	                                                " ",
+	                                                _react2.default.createElement(
+	                                                    "span",
+	                                                    { className: "network-name" },
+	                                                    "Linkedin"
+	                                                )
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return TopBanner;
+	}(_react.Component);
+	
+	exports.default = TopBanner;
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var LandingPageFirstData = function (_Component) {
+	    _inherits(LandingPageFirstData, _Component);
+	
+	    function LandingPageFirstData() {
+	        _classCallCheck(this, LandingPageFirstData);
+	
+	        return _possibleConstructorReturn(this, (LandingPageFirstData.__proto__ || Object.getPrototypeOf(LandingPageFirstData)).apply(this, arguments));
+	    }
+	
+	    _createClass(LandingPageFirstData, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement("a", { name: "services" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "content-section-a" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "row" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-5 col-sm-6" },
+	                                _react2.default.createElement("hr", { className: "section-heading-spacer" }),
+	                                _react2.default.createElement("div", { className: "clearfix" }),
+	                                _react2.default.createElement(
+	                                    "h2",
+	                                    { className: "section-heading" },
+	                                    "Landing Page Data "
+	                                ),
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    { className: "lead" },
+	                                    " Data here ",
+	                                    _react2.default.createElement("a", { target: "_blank", href: "http://join.deathtothestockphoto.com/" })
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-5 col-lg-offset-2 col-sm-6" },
+	                                _react2.default.createElement("img", { className: "img-responsive", src: "img/ipad.png", alt: "" })
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return LandingPageFirstData;
+	}(_react.Component);
+	
+	exports.default = LandingPageFirstData;
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var LandingPageSecondData = function (_Component) {
+	    _inherits(LandingPageSecondData, _Component);
+	
+	    function LandingPageSecondData() {
+	        _classCallCheck(this, LandingPageSecondData);
+	
+	        return _possibleConstructorReturn(this, (LandingPageSecondData.__proto__ || Object.getPrototypeOf(LandingPageSecondData)).apply(this, arguments));
+	    }
+	
+	    _createClass(LandingPageSecondData, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "content-section-b" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "row" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6" },
+	                                _react2.default.createElement("hr", { className: "section-heading-spacer" }),
+	                                _react2.default.createElement("div", { className: "clearfix" }),
+	                                _react2.default.createElement(
+	                                    "h2",
+	                                    { className: "section-heading" },
+	                                    "Landing Page Data"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    { className: "lead" },
+	                                    " Data here ",
+	                                    _react2.default.createElement("a", { target: "_blank", href: "http://www.psdcovers.com/" })
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-5 col-sm-pull-6  col-sm-6" },
+	                                _react2.default.createElement("img", { className: "img-responsive", src: "img/dog.png", alt: "" })
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return LandingPageSecondData;
+	}(_react.Component);
+	
+	exports.default = LandingPageSecondData;
+
+/***/ },
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var LandingPageBanner = function (_Component) {
+	    _inherits(LandingPageBanner, _Component);
+	
+	    function LandingPageBanner() {
+	        _classCallCheck(this, LandingPageBanner);
+	
+	        return _possibleConstructorReturn(this, (LandingPageBanner.__proto__ || Object.getPrototypeOf(LandingPageBanner)).apply(this, arguments));
+	    }
+	
+	    _createClass(LandingPageBanner, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement("a", { name: "contact" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "banner" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "row" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-6" },
+	                                _react2.default.createElement(
+	                                    "h2",
+	                                    null,
+	                                    "Connect to Start Bootstrap:"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-lg-6" },
+	                                _react2.default.createElement(
+	                                    "ul",
+	                                    { className: "list-inline banner-social-buttons" },
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "https://twitter.com/SBootstrap", className: "btn btn-default btn-lg" },
+	                                            _react2.default.createElement("i", { className: "fa fa-twitter fa-fw" }),
+	                                            " ",
+	                                            _react2.default.createElement(
+	                                                "span",
+	                                                { className: "network-name" },
+	                                                "Twitter"
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "https://github.com/IronSummitMedia/startbootstrap", className: "btn btn-default btn-lg" },
+	                                            _react2.default.createElement("i", { className: "fa fa-github fa-fw" }),
+	                                            " ",
+	                                            _react2.default.createElement(
+	                                                "span",
+	                                                { className: "network-name" },
+	                                                "Github"
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#", className: "btn btn-default btn-lg" },
+	                                            _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw" }),
+	                                            " ",
+	                                            _react2.default.createElement(
+	                                                "span",
+	                                                { className: "network-name" },
+	                                                "Linkedin"
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return LandingPageBanner;
+	}(_react.Component);
+	
+	exports.default = LandingPageBanner;
 
 /***/ }
 /******/ ]);
