@@ -18,9 +18,9 @@ $ webpack -w
 Client-side
 --- | ---
 
-"body-parser": "~1.15.2" | "cookie-parser": "~1.4.3"
-"debug": "~2.2.0" | "express": "~4.14.0"
-"hjs": "~0.0.6" | "morgan": "~1.7.0"
-"mysql": "^2.12.0" | "react": "^15.4.1"
-"react-dom": "^15.4.1" | "resmetry": "^1.0.2"
-"serve-favicon": "~2.3.0" |
+body-parser: ~1.15.2 | cookie-parser: ~1.4.3
+debug: ~2.2.0 | express: ~4.14.0
+hjs: ~0.0.6 | morgan: ~1.7.0
+mysq: ^2.12.0 | react: ^15.4.1
+react-dom: ^15.4.1 | resmetry: ^1.0.2
+serve-favicon: ~2.3.0 |
