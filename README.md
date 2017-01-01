@@ -50,6 +50,3 @@ Signup Page
 
 ## Author
 [SaifRehman](SaifRehman.github.io)
-
-### License
-[MIT](https://github.com/amazingandyyy/eventbrite-api/blob/master/LICENSE)
