@@ -15,7 +15,7 @@ $ webpack -w
 ```
 
 # Dependencies(tech-stack)
-Client-side | Server-side
+Client-side
 --- | ---
 
 "body-parser": "~1.15.2" | "cookie-parser": "~1.4.3"
