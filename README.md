@@ -35,7 +35,8 @@ serve-favicon: ~2.3.0
 "babel-preset-react": "^6.16.0"
 "webpack": "^1.14.0"
 
-# Screemshots of this project
+# Screenshots of this project
+
 
 Landing Page
 ![Landing Page](http://i.imgur.com/ORCGHHY.png)
@@ -44,7 +45,8 @@ Signin Page
 ![Signin Page](http://i.imgur.com/rrmbU5I.png)
 
 Signup Page
-![Signup Page](http://i.imgur.com/rrmbU5I.png)
+![Signup Page](http://i.imgur.com/FzLB51u.png)
+
 
 ## Author
 [SaifRehman](SaifRehman.github.io)
