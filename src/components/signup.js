@@ -1,77 +1,62 @@
 import React, { Component } from 'react'
 import Navbar from './navbar'
-
 class Signup extends Component{
   render(){
     return(
   <div>
-  <div className="container">
-          <div className="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"  style={{marginTop:50+'px'}}>
+  <Navbar/>
+  <div className="intro-header">
+      <div className="container">
+          <div className="row">
+              <div className="col-lg-12">
+                  <div className="intro-message">
+
+                  <div style={{marginTop:-100+ 'px'}} className="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                       <div className="panel panel-info">
                           <div className="panel-heading">
-                              <div className="panel-title">Sign Up</div>
-                              <div style={{float:'right', fontSize: 85+'%', position: 'relative', top:-10+'px'}}><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                              <div className="panel-title">Sign up</div>
                           </div>
-                          <div className="panel-body" >
-                              <form id="signupform" className="form-horizontal" role="form">
-
-                                  <div id="signupalert" style={{display:'none'}} className="alert alert-danger">
-                                      <p>Error:</p>
-                                      <span></span>
-                                  </div>
-
-
-
-                                  <div className="form-group">
-                                      <label for="email" className="col-md-3 control-label">Email</label>
-                                      <div className="col-md-9">
-                                          <input type="text" className="form-control" name="email" placeholder="Email Address"/>
-                                      </div>
-                                  </div>
-
-                                  <div className="form-group">
-                                      <label for="firstname" className="col-md-3 control-label">First Name</label>
-                                      <div className="col-md-9">
-                                          <input type="text" className="form-control" name="firstname" placeholder="First Name"/>
-                                      </div>
-                                  </div>
-                                  <div className="form-group">
-                                      <label for="lastname" className="col-md-3 control-label">Last Name</label>
-                                      <div className="col-md-9">
-                                          <input type="text" className="form-control" name="lastname" placeholder="Last Name"/>
-                                      </div>
-                                  </div>
-                                  <div className="form-group">
-                                      <label for="password" className="col-md-3 control-label">Password</label>
-                                      <div className="col-md-9">
-                                          <input type="password" className="form-control" name="passwd" placeholder="Password"/>
-                                      </div>
-                                  </div>
-
-                                  <div className="form-group">
-                                      <label for="icode" className="col-md-3 control-label">Invitation Code</label>
-                                      <div className="col-md-9">
-                                          <input type="text" className="form-control" name="icode" placeholder=""/>
-                                      </div>
-                                  </div>
-
-                                  <div className="form-group">
-                                      <div className="col-md-offset-3 col-md-9">
-                                          <button id="btn-signup" type="button" className="btn btn-info"><i className="icon-hand-right"></i> &nbsp Sign Up</button>
-                                          <span style={{marginLeft:8+'px'}}>or</span>
-                                      </div>
-                                  </div>
-
-                                  <div style={{borderTop: 1+'px'+ 'solid #'+999, paddingTop:20+'px'}}  className="form-group">
-                                      <div className="col-md-offset-3 col-md-9">
-                                          <button id="btn-fbsignup" type="button" className="btn btn-primary"><i className="icon-facebook"></i>   Sign Up with Facebook</button>
-                                      </div>
-                                  </div>
-                              </form>
-                           </div>
                       </div>
+                      <div style={{paddingTop:10+ 'px'}} className="panel-body">
+                          <div style={{display: 'none'}} id="login-alert" className="alert alert-danger col-sm-12"></div>
+                          <form id="loginform" className="form-horizontal" role="form">
+                              <div style={{marginBottom: 25+ 'px'}} className="input-group">
+                                  <span className="input-group-addon"><i className="glyphicon glyphicon-envelope"></i></span>
+                                  <input id="login-email" type="text" className="form-control" name="email" value="" placeholder="Email" />
+                              </div>
+                              <div style={{marginBottom: 25+ 'px'}} className="input-group">
+                                  <span className="input-group-addon"><i className="glyphicon glyphicon-user"></i></span>
+                                  <input id="first-name" type="text" className="form-control" name="firstname" placeholder="First Name" />
+                              </div>
+                              <div style={{marginBottom: 25+ 'px'}} className="input-group">
+                                  <span className="input-group-addon"><i className="glyphicon glyphicon-user"></i></span>
+                                  <input id="last-name" type="text" className="form-control" name="lastname" placeholder="Last Name" />
+                              </div>
+                              <div style={{marginBottom: 25+ 'px'}} className="input-group">
+                                  <span className="input-group-addon"><i className="glyphicon glyphicon-home"></i></span>
+                                  <input id="university" type="text" className="form-control" name="university" placeholder="University" />
+                              </div>
+                              <div style={{marginBottom: 25+ 'px'}} className="input-group">
+                                  <span className="input-group-addon"><i className="glyphicon glyphicon-asterisk"></i></span>
+                                  <input id="password" type="text" className="form-control" name="password" placeholder="Password" />
+                              </div>
+
+                              <div style={{marginTop:10+ 'px'}} className="form-group">
+                                  <div className="col-sm-12 controls">
+                                      <a id="btn-login" href="#" className="btn btn-success">Sign up</a>
+                                  </div>
+                              </div>
+                              <div className="form-group">
+
+                              </div>
+                          </form>
+                      </div>
+                  </div>
            </div>
-      </div>
+           </div>
+           </div>
+           </div>
+           </div>
   </div>
     )
   }

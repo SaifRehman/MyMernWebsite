@@ -14,10 +14,13 @@ class Navbar extends Component{
                       <ul className="nav navbar-nav navbar-right">
                           <li>
                             < Link to="signin">
-                              Login</Link>
+                              Login
+                            </Link>
                           </li>
                           <li>
-                              <a href="#signup">Signup</a>
+                          < Link to="signup">
+                            Sign up
+                          </Link>
                           </li>
                       </ul>
                   </div>

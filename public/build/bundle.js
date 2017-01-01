@@ -21700,7 +21700,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -21720,68 +21720,68 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var Navbar = function (_Component) {
-	    _inherits(Navbar, _Component);
+	  _inherits(Navbar, _Component);
 	
-	    function Navbar() {
-	        _classCallCheck(this, Navbar);
+	  function Navbar() {
+	    _classCallCheck(this, Navbar);
 	
-	        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
-	    }
+	    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+	  }
 	
-	    _createClass(Navbar, [{
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'div',
-	                null,
+	  _createClass(Navbar, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'nav',
+	          { className: 'navbar navbar-default navbar-fixed-top topnav', role: 'navigation' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'container topnav' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'navbar-header' },
+	              _react2.default.createElement(
+	                'a',
+	                { className: 'navbar-brand topnav', href: '#' },
+	                'StarupProject'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
+	              _react2.default.createElement(
+	                'ul',
+	                { className: 'nav navbar-nav navbar-right' },
 	                _react2.default.createElement(
-	                    'nav',
-	                    { className: 'navbar navbar-default navbar-fixed-top topnav', role: 'navigation' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'container topnav' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'navbar-header' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { className: 'navbar-brand topnav', href: '#' },
-	                                'StarupProject'
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
-	                            _react2.default.createElement(
-	                                'ul',
-	                                { className: 'nav navbar-nav navbar-right' },
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        _reactRouter.Link,
-	                                        { to: 'signin' },
-	                                        'Login'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        'a',
-	                                        { href: '#signup' },
-	                                        'Signup'
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    )
+	                  'li',
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: 'signin' },
+	                    'Login'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: 'signup' },
+	                    'Sign up'
+	                  )
 	                )
-	            );
-	        }
-	    }]);
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
 	
-	    return Navbar;
+	  return Navbar;
 	}(_react.Component);
 	
 	exports.default = Navbar;
@@ -27343,149 +27343,109 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
+	                _react2.default.createElement(_navbar2.default, null),
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'container' },
+	                    { className: 'intro-header' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2', style: { marginTop: 50 + 'px' } },
+	                        { className: 'container' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'panel panel-info' },
+	                            { className: 'row' },
 	                            _react2.default.createElement(
 	                                'div',
-	                                { className: 'panel-heading' },
+	                                { className: 'col-lg-12' },
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'panel-title' },
-	                                    'Sign Up'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { style: { float: 'right', fontSize: 85 + '%', position: 'relative', top: -10 + 'px' } },
-	                                    _react2.default.createElement(
-	                                        'a',
-	                                        { id: 'signinlink', href: '#', onclick: '$(\'#signupbox\').hide(); $(\'#loginbox\').show()' },
-	                                        'Sign In'
-	                                    )
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-body' },
-	                                _react2.default.createElement(
-	                                    'form',
-	                                    { id: 'signupform', className: 'form-horizontal', role: 'form' },
+	                                    { className: 'intro-message' },
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        { id: 'signupalert', style: { display: 'none' }, className: 'alert alert-danger' },
-	                                        _react2.default.createElement(
-	                                            'p',
-	                                            null,
-	                                            'Error:'
-	                                        ),
-	                                        _react2.default.createElement('span', null)
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { 'for': 'email', className: 'col-md-3 control-label' },
-	                                            'Email'
-	                                        ),
+	                                        { style: { marginTop: -100 + 'px' }, className: 'mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2' },
 	                                        _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'col-md-9' },
-	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'email', placeholder: 'Email Address' })
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { 'for': 'firstname', className: 'col-md-3 control-label' },
-	                                            'First Name'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'col-md-9' },
-	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'firstname', placeholder: 'First Name' })
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { 'for': 'lastname', className: 'col-md-3 control-label' },
-	                                            'Last Name'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'col-md-9' },
-	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'lastname', placeholder: 'Last Name' })
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { 'for': 'password', className: 'col-md-3 control-label' },
-	                                            'Password'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'col-md-9' },
-	                                            _react2.default.createElement('input', { type: 'password', className: 'form-control', name: 'passwd', placeholder: 'Password' })
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { 'for': 'icode', className: 'col-md-3 control-label' },
-	                                            'Invitation Code'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'col-md-9' },
-	                                            _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'icode', placeholder: '' })
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'form-group' },
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'col-md-offset-3 col-md-9' },
+	                                            { className: 'panel panel-info' },
 	                                            _react2.default.createElement(
-	                                                'button',
-	                                                { id: 'btn-signup', type: 'button', className: 'btn btn-info' },
-	                                                _react2.default.createElement('i', { className: 'icon-hand-right' }),
-	                                                ' &nbsp Sign Up'
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                'span',
-	                                                { style: { marginLeft: 8 + 'px' } },
-	                                                'or'
+	                                                'div',
+	                                                { className: 'panel-heading' },
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'panel-title' },
+	                                                    'Sign up'
+	                                                )
 	                                            )
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { style: { borderTop: 1 + 'px' + 'solid #' + 999, paddingTop: 20 + 'px' }, className: 'form-group' },
+	                                        ),
 	                                        _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'col-md-offset-3 col-md-9' },
+	                                            { style: { paddingTop: 10 + 'px' }, className: 'panel-body' },
+	                                            _react2.default.createElement('div', { style: { display: 'none' }, id: 'login-alert', className: 'alert alert-danger col-sm-12' }),
 	                                            _react2.default.createElement(
-	                                                'button',
-	                                                { id: 'btn-fbsignup', type: 'button', className: 'btn btn-primary' },
-	                                                _react2.default.createElement('i', { className: 'icon-facebook' }),
-	                                                ' \xA0 Sign Up with Facebook'
+	                                                'form',
+	                                                { id: 'loginform', className: 'form-horizontal', role: 'form' },
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        { className: 'input-group-addon' },
+	                                                        _react2.default.createElement('i', { className: 'glyphicon glyphicon-envelope' })
+	                                                    ),
+	                                                    _react2.default.createElement('input', { id: 'login-email', type: 'text', className: 'form-control', name: 'email', value: '', placeholder: 'Email' })
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        { className: 'input-group-addon' },
+	                                                        _react2.default.createElement('i', { className: 'glyphicon glyphicon-user' })
+	                                                    ),
+	                                                    _react2.default.createElement('input', { id: 'first-name', type: 'text', className: 'form-control', name: 'firstname', placeholder: 'First Name' })
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        { className: 'input-group-addon' },
+	                                                        _react2.default.createElement('i', { className: 'glyphicon glyphicon-user' })
+	                                                    ),
+	                                                    _react2.default.createElement('input', { id: 'last-name', type: 'text', className: 'form-control', name: 'lastname', placeholder: 'Last Name' })
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        { className: 'input-group-addon' },
+	                                                        _react2.default.createElement('i', { className: 'glyphicon glyphicon-home' })
+	                                                    ),
+	                                                    _react2.default.createElement('input', { id: 'university', type: 'text', className: 'form-control', name: 'university', placeholder: 'University' })
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { style: { marginBottom: 25 + 'px' }, className: 'input-group' },
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        { className: 'input-group-addon' },
+	                                                        _react2.default.createElement('i', { className: 'glyphicon glyphicon-asterisk' })
+	                                                    ),
+	                                                    _react2.default.createElement('input', { id: 'password', type: 'text', className: 'form-control', name: 'password', placeholder: 'Password' })
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { style: { marginTop: 10 + 'px' }, className: 'form-group' },
+	                                                    _react2.default.createElement(
+	                                                        'div',
+	                                                        { className: 'col-sm-12 controls' },
+	                                                        _react2.default.createElement(
+	                                                            'a',
+	                                                            { id: 'btn-login', href: '#', className: 'btn btn-success' },
+	                                                            'Sign up'
+	                                                        )
+	                                                    )
+	                                                ),
+	                                                _react2.default.createElement('div', { className: 'form-group' })
 	                                            )
 	                                        )
 	                                    )
