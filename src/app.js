@@ -26,5 +26,7 @@ ReactDOM.render(
   < Router  history = {hashHistory}>
   < Route path = "/" component={LandingPage}></Route>
   < Route path = "signin" component={Signin}> </Route>
+  < Route path = "signup" component={Signup}> </Route>
+
   </Router>
   ,document.getElementById('root'))

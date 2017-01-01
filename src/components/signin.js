@@ -18,8 +18,6 @@ class Signin extends Component{
                           <div className="panel panel-info">
                               <div className="panel-heading">
                                   <div className="panel-title">Sign In</div>
-                                  <div style={{float: "right", fontSize: 80+ '%', position: "relative", top:-10+ 'px'}}><a href="#">Forgot password?</a>
-                                  </div>
                               </div>
                           </div>
                           <div style={{paddingTop:10+ 'px'}} className="panel-body">
@@ -46,13 +44,7 @@ class Signin extends Component{
                                       </div>
                                   </div>
                                   <div className="form-group">
-                                      <div className="col-md-12 control">
-                                          <div style={{borderTop: 1+ 'px' + 'solid #'+919 , paddingTop:15+ 'px', fontSize:85+ '%'}}>
-                                              <a href="#" onClick={this.functionSample.bind(this)}>
-                  Sign Up Here
-                  </a>
-                                          </div>
-                                      </div>
+
                                   </div>
                               </form>
                           </div>
