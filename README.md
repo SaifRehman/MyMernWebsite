@@ -39,7 +39,7 @@ serve-favicon: ~2.3.0
 
 
 Landing Page
-![Landing Page](http://i.imgur.com/ORCGHHY.png)
+![Landing Page](http://i.imgur.com/Q4d2ND2.jpg)
 
 Signin Page
 ![Signin Page](http://i.imgur.com/rrmbU5I.png)
