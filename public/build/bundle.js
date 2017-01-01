@@ -27361,7 +27361,7 @@
 	                                    { className: 'intro-message' },
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        { style: { marginTop: -100 + 'px' }, className: 'mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2' },
+	                                        { style: { marginTop: -80 + 'px' }, className: 'mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2' },
 	                                        _react2.default.createElement(
 	                                            'div',
 	                                            { className: 'panel panel-info' },

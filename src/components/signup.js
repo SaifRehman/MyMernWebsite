@@ -11,7 +11,7 @@ class Signup extends Component{
               <div className="col-lg-12">
                   <div className="intro-message">
 
-                  <div style={{marginTop:-100+ 'px'}} className="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                  <div style={{marginTop:-80+ 'px'}} className="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                       <div className="panel panel-info">
                           <div className="panel-heading">
                               <div className="panel-title">Sign up</div>
