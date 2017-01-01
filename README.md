@@ -12,6 +12,7 @@ $ git clone https://github.com/SaifRehman/MyMernWebsite.git
 $ sudo npm install webpack -s
 $ nodemon
 $ webpack -w
+http://localhost:3000
 ```
 
 # Dependencies
