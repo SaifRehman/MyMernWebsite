@@ -3,7 +3,7 @@ MySQL, Express, React/Redux, Node
 
 ## clone or Send Pull Request
 ```terminal
-$ git clone https://github.com/amazingandyyy/mern-stack
+$ git clone https://github.com/SaifRehman/MyMernWebsite.git
 ```
 
 # Usage(make it run on your machine)
