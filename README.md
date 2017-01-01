@@ -42,10 +42,10 @@ Landing Page
 ![Landing Page](http://i.imgur.com/Q4d2ND2.jpg)
 
 Signin Page
-![Signin Page](http://i.imgur.com/rrmbU5I.png)
+![Signin Page](http://i.imgur.com/B1hGZ5h.jpg)
 
 Signup Page
-![Signup Page](http://i.imgur.com/FzLB51u.png)
+![Signup Page](http://i.imgur.com/cWm7lCf.jpg)
 
 
 ## Author
