@@ -34,3 +34,20 @@ serve-favicon: ~2.3.0
 "babel-preset-es2015": "^6.18.0"
 "babel-preset-react": "^6.16.0"
 "webpack": "^1.14.0"
+
+# Screemshots of this project
+
+Landing Page
+![Landing Page](http://i.imgur.com/ORCGHHY.png)
+
+Signin Page
+![Signin Page](http://i.imgur.com/rrmbU5I.png)
+
+Signup Page
+![Signup Page](http://i.imgur.com/rrmbU5I.png)
+
+## Author
+[SaifRehman](SaifRehman.github.io)
+
+### License
+[MIT](https://github.com/amazingandyyy/eventbrite-api/blob/master/LICENSE)
