@@ -24,26 +24,3 @@ Client-side | Server-side
 "mysql": "^2.12.0" | "react": "^15.4.1"
 "react-dom": "^15.4.1" | "resmetry": "^1.0.2"
 "serve-favicon": "~2.3.0" |
-
-
-# Screemshots of this project
-
-User visit public and Home page
-![User visit public and Home page](http://i.imgur.com/ORCGHHY.png)
-
-User can sign in or sign up
-![User can sign in or sign up](http://i.imgur.com/rrmbU5I.png)
-
-After signing in user can go to secret route and make request to token-protected API endpoint
-![After signing in user can go to secret route](http://i.imgur.com/FzLB51u.png)
-
-## BUGs or comments
-[Create new Issues](https://github.com/amazingandyyy/mern-stack/issues)
-
-## Author
-[Amazingandyyy](amazingandyyy.github.io)
-- Feel free to find me on _[GitHub](https://github.com/amazingandyyy)_ and _[LiveCoding](https://www.livecoding.tv/amazingandyyy/)_
-- or visit my _[page](http://amazingandyyy.github.io/)_
-
-### License
-[MIT](https://github.com/amazingandyyy/eventbrite-api/blob/master/LICENSE)
