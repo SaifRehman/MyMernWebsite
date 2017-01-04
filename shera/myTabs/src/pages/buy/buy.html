@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color="light" hideBackButton="true">
+    <button ion-button menuToggle>
+     <input  type="image" id="myimage" style="height:30px;width:49px;" src="assets/icon/sahim-final.png" />
+    </button>
+    <ion-title>
+      Transaction
+    </ion-title>
+    <ion-buttons end>
+      <button (click)="cancel()" ion-button >
+        CANCEL
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+<ion-content style="background-color: #f7f7f7 !important;">
+  <ion-list>
+    <ion-item>
+      <ion-icon name='pricetag' item-left color = "favorite"></ion-icon>
+      Closing Price
+      <ion-note item-right color = "primary">
+      1233
+      </ion-note>
+    </ion-item>
+    <ion-item>
+  <ion-label>Quantity</ion-label>
+  <ion-input type="number" [(ngModel)]="price"  (ngModelChange)="do($event)"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-icon name='stats' item-left color = "favorite"></ion-icon>
+  Total Price
+  <ion-note item-right color = "primary">
+  {{show}}
+  </ion-note>
+</ion-item>
+<br><br>
+<button ion-button block (click)="buynow()">Buy</button>
+  </ion-list>
+</ion-content>

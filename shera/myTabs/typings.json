@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "highcharts": "registry:dt/highcharts#4.2.5+20161025153818",
+    "moment": "registry:dt/moment#2.11.1+20161010105546"
+  }
+}

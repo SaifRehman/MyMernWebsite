@@ -36,14 +36,13 @@ serve-favicon: ~2.3.0
 "babel-preset-react": "^6.16.0"
 "webpack": "^1.14.0"
 
-# Screenshots of this project
-
+# Screenshots of the project
 
 Landing Page
 ![Landing Page](http://i.imgur.com/Q4d2ND2.jpg)
 
 Signin Page
-![Signin Page](http://i.imgur.com/B1hGZ5h.jpg)
+![Login Page](http://i.imgur.com/B1hGZ5h.jpg)
 
 Signup Page
 ![Signup Page](http://i.imgur.com/cWm7lCf.jpg)
