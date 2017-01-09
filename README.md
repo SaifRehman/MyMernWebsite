@@ -1,5 +1,5 @@
 # My-MERN-STACK
-MySQL, Express, React/Redux, Node
+MySQL, Express, React/Redux, Nodejs
 
 ## clone or Send Pull Request
 ```terminal
