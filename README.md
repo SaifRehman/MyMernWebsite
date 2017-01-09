@@ -9,7 +9,7 @@ $ git clone https://github.com/SaifRehman/MyMernWebsite.git
 # Usage(make it run on your machine)
 ### Client-side usage(PORT: 3000)
 ```terminal
-$ sudo npm install webpack -s
+$ sudo npm install webpack -save
 $ nodemon
 $ webpack -w
 ```
