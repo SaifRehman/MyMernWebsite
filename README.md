@@ -1,4 +1,4 @@
-# My-MERN-STACK
+# MyMERN-STACK
 MySQL, Express, React/Redux, Nodejs
 
 ## clone or Send Pull Request
